@@ -55,14 +55,14 @@
       // This is an event handling function.
 
       // Get name that user typed in Name field.
-      const name = $('#nameField').val();
+      const inputName = $('#nameField').val();
 
       // Get skill that user typed in Skill field.
-      const skill = $('#skillField').val();
+      const inputSkill = $('#skillField').val();
 
       const formData = {
-        skill: skill,
-        name: name
+        skill: inputSkill,
+        name: inputName
       };
 
       $.post('/add-card', formData, (response) => {
