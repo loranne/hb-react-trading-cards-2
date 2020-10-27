@@ -38,9 +38,9 @@ function TradingCardContainer() {
 
   // console.log([floatCard]);
 
-  // const [cards, updateCards] = React.useState([floatCard]);
+  const [cards, updateCards] = React.useState([floatCard]);
 
-  // const tradingCards = [];
+  const tradingCards = [];
 
   React.useEffect(() => {
     fetch('/cards.json')
